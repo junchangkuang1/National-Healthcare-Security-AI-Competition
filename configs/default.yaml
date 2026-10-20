@@ -1,0 +1,21 @@
+# Reference configuration. Command-line arguments take precedence in the scripts.
+data:
+  image_size: 384
+  negative_frame_ratio: 0.25
+  split: [0.8, 0.1, 0.1]
+  bad_file_policy: skip
+
+model:
+  architecture: UnetPlusPlus
+  encoder: timm-efficientnet-b5
+  encoder_weights: imagenet
+
+training:
+  epochs: 100
+  batch_size: 6
+  learning_rate: 0.0002
+  weight_decay: 0.0001
+  gradient_accumulation: 1
+  amp_dtype: bf16
+  seed: 2026
+

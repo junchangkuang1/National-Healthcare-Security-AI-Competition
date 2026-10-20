@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Local data and generated artifacts (may contain protected health information)
+data/
+datasets/
+metadata/
+workspace/
+outputs/
+logs/
+checkpoints/
+*.pth
+*.pt
+*.ckpt
+*.dcm
+*.nii
+*.nii.gz
+*.xlsx
+
